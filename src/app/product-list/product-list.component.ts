@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from '../product.model';
 
 @Component({
@@ -6,6 +6,7 @@ import { Product } from '../product.model';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
+
 export class ProductListComponent{
   @Input() productList: Product[];
   @Output() onProductSelected: EventEmitter<Product>;
