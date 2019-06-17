@@ -1,7 +1,6 @@
-<div class="inventory-app">
+<div class="app-root">
   <app-product-list
-    [productList] = "products",
+    [productList]="products"
     (onProductSelected)="productWasSelected($event)">
   </app-product-list>
 </div>
-  
